@@ -15,13 +15,13 @@ const Button = ({handleClick, text}) => {
 const Summary = ({good, bad , neutral}) => {
   const numOfReviews = good+bad+neutral;
   const average = (good-bad)/numOfReviews;
-  const positive = good/numOfReviews;
+  const positive = good/numOfReviews*100 + '%';
 
   if(numOfReviews>0)
   return (<>
     <Display value={numOfReviews} text='All'/>
     <Display value={average} text='Average'/>
-    <Display value={positive} text='Positive'/>
+    <Display value={positive} text='Positive '/>
   </>)
   else
   return <p>No reviews provided!</p>
