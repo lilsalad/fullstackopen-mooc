@@ -3,7 +3,7 @@ const Contact = (props) => {
     return(
     <>
       <ul>
-        {props.list.map(person => <li>{person.name}</li>)}
+        {props.list.map(person => <li>{person.name} - {person.number}</li>)}
       </ul>
     </>
     )
