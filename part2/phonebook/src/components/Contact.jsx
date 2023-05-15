@@ -1,5 +1,5 @@
 const Contact = (props) => {
-    //console.log(props.list)
+    //console.log(props)
     return(
     <>
       <ul>
